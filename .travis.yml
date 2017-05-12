@@ -9,6 +9,6 @@ env:
 
 rvm:
   - 2.3.3
-  - jruby-19mode
+  - ruby-head
 
 

@@ -15,5 +15,6 @@ gemspec
 
 group :test do
   gem 'minitest', '<= 5.10.1'
+  gem 'test-unit', '~> 3.0' if rails_version.match(/^3\.2/)
   gem 'rails', rails
 end

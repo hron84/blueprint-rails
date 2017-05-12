@@ -5,6 +5,8 @@ require "#{ENGINE_RAILS_ROOT}/test/dummy/config/environment.rb"
 
 require 'minitest/spec'
 require 'rails/test_help'
+require 'minitest/autorun' if Rails::VERSION::MAJOR == 3
+
 
 Rails.backtrace_cleaner.remove_silencers!
 
