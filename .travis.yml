@@ -11,8 +11,9 @@ rvm:
   - 2.3.3
   - ruby-head
 
-exclude:
-  - env: RAILS_VERSION="4.0.0"
-    rvm: ruby-head
-  - env: RAILS_VERSION="4.1.0"
-    rvm: ruby-head
+matrix:
+  exclude:
+    - env: RAILS_VERSION="4.0.0"
+      rvm: ruby-head
+    - env: RAILS_VERSION="4.1.0"
+      rvm: ruby-head
