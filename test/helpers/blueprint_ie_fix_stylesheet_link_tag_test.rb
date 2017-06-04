@@ -6,7 +6,7 @@ describe Blueprint::Helpers::Helper do
       helper.must_respond_to :blueprint_ie_fix_stylesheet_link_tag
     end
     it 'should output IE css include' do
-      helper.blueprint_ie_fix_stylesheet_link_tag.must_equal "<!--[if lt IE 8]><link rel=\"stylesheet\" media=\"screen\" href=\"/stylesheets/blueprint/ie.css\" /><![endif] -->"
+      helper.blueprint_ie_fix_stylesheet_link_tag.must_match %r{<!--\[if lt IE 8\]><link.*? href="/stylesheets/blueprint/ie.css".*?/><!\[endif\] -->}
     end
   end
 end
