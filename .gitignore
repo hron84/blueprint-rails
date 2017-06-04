@@ -5,3 +5,6 @@ log/*
 .bundle
 imports/*
 Gemfile.lock
+/.ruby-gemset
+/.ruby-version
+/.envrc
